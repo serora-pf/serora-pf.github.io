@@ -1,63 +1,85 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEROA Portfolio</title>
-  <!-- CSS 파일 경로: assets/style.css -->
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
-<body>
-  <!-- 헤더 및 네비게이션 -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#hero">홈</a></li>
-        <li><a href="#about">소개</a></li>
-        <li><a href="#projects">프로젝트</a></li>
-        <li><a href="#contact">연락</a></li>
-      </ul>
-    </nav>
-  </header>
+/* 리셋 및 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- 히어로 섹션 -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>안녕하세요, SEROA입니다!</h1>
-      <p>포트폴리오에 오신 것을 환영합니다.</p>
-    </div>
-  </section>
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
 
-  <!-- 소개 섹션 -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>여기에 본인 소개 및 경력, 스킬 등을 기재합니다.</p>
-  </section>
+/* 헤더 및 네비게이션 */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+}
 
-  <!-- 프로젝트 섹션 -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <img src="images/project1.jpg" alt="Project 1" />
-      <h3>프로젝트 제목 1</h3>
-      <p>프로젝트 설명 내용을 여기에 작성합니다.</p>
-    </div>
-    <!-- 프로젝트 항목은 추가 가능 -->
-  </section>
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
 
-  <!-- 연락 섹션 -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>이메일: your-email@example.com</p>
-    <!-- 혹은 SNS 링크 등 추가 가능 -->
-  </section>
+header nav ul li {
+  margin: 0 15px;
+}
 
-  <!-- 푸터 -->
-  <footer>
-    <p>&copy; 2025 SEROA. All rights reserved.</p>
-  </footer>
-  
-  <!-- (필요 시) JS 파일 연결: assets/script.js -->
-  <script src="assets/script.js"></script>
-</body>
-</html>
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* 히어로 섹션 */
+#hero {
+  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+/* 섹션 기본 스타일 */
+section {
+  padding: 3em 1em;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* 프로젝트 섹션 */
+.project {
+  margin: 2em auto;
+  max-width: 600px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project h3 {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+/* 푸터 */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
