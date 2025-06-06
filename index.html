@@ -1,34 +1,63 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEROA 포트폴리오</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>SEROA Portfolio</title>
+  <!-- CSS 파일 경로: assets/style.css -->
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <!-- 헤더 및 네비게이션 -->
   <header>
-    <h1>SEROA 포트폴리오</h1>
-    <!-- 필요한 네비게이션 등 삽입 -->
+    <nav>
+      <ul>
+        <li><a href="#hero">홈</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>이름, 전공, 자기소개 등</p>
+  <!-- 히어로 섹션 -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>안녕하세요, SEROA입니다!</h1>
+      <p>포트폴리오에 오신 것을 환영합니다.</p>
+    </div>
   </section>
 
+  <!-- 소개 섹션 -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>여기에 본인 소개 및 경력, 스킬 등을 기재합니다.</p>
+  </section>
+
+  <!-- 프로젝트 섹션 -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <img src="images/project1.jpg" alt="프로젝트 1">
-      <p>프로젝트 설명</p>
+      <img src="images/project1.jpg" alt="Project 1" />
+      <h3>프로젝트 제목 1</h3>
+      <p>프로젝트 설명 내용을 여기에 작성합니다.</p>
     </div>
-    <!-- 다른 프로젝트 반복 -->
+    <!-- 프로젝트 항목은 추가 가능 -->
   </section>
 
+  <!-- 연락 섹션 -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>이메일: your-email@example.com</p>
+    <!-- 혹은 SNS 링크 등 추가 가능 -->
+  </section>
+
+  <!-- 푸터 -->
   <footer>
     <p>&copy; 2025 SEROA. All rights reserved.</p>
   </footer>
+  
+  <!-- (필요 시) JS 파일 연결: assets/script.js -->
+  <script src="assets/script.js"></script>
 </body>
 </html>
