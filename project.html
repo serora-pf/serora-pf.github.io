@@ -2,11 +2,13 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>프로젝트 - Game Art Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- 헤더 -->
   <header class="header">
     <div class="logo">Game Art Portfolio</div>
     <nav>
@@ -19,26 +21,77 @@
     </nav>
   </header>
 
+  <!-- 프로젝트 섹션 -->
   <main>
     <section class="projects">
       <h1>My Art Projects</h1>
 
-      <article class="project">
-        <img src="https://via.placeholder.com/1000x600?text=New+York+City" alt="New York City 환경 디자인" />
-        <h2>New York City</h2>
-        <p>3D 환경 디자인 프로젝트</p>
-      </article>
+      <!-- 3D Art -->
+      <div class="project-category">
+        <h2>3D Art</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="images/3.png" alt="New York City" />
+            <h3>New York City</h3>
+          </div>
+          <div class="project-item">
+            <img src="images/12.png" alt="Guardians of Dreams" />
+            <h3>Guardians of Dreams</h3>
+          </div>
+        </div>
+      </div>
 
-      <article class="project">
-        <img src="https://via.placeholder.com/1000x600?text=Guardians+of+Dreams" alt="Guardians of Dreams 캐릭터 디자인" />
-        <h2>Guardians of Dreams</h2>
-        <p>게임 캐릭터 디자인 프로젝트</p>
-      </article>
+      <!-- Architecture -->
+      <div class="project-category">
+        <h2>Architecture</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="images/1(0004).png" alt="Timber House" />
+            <h3>Timber House</h3>
+          </div>
+        </div>
+      </div>
 
-      <!-- 추가 프로젝트는 여기에 같은 형식으로 넣으시면 됩니다 -->
+      <!-- GDD -->
+      <div class="project-category">
+        <h2>GDD</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="images/gdd2.png" alt="Project Deception" />
+            <h3>Project Deception</h3>
+          </div>
+          <div class="project-item">
+            <img src="images/임시이미지.png" alt="Project 천년 밤하늘" />
+            <h3>Project 천년 밤하늘</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 3 -->
+      <div class="project-category">
+        <h2>Chapter 3</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="images/임시이미지.png" alt="Strategy Simulation" />
+            <h3>Strategy Simulation</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter 4 -->
+      <div class="project-category">
+        <h2>Chapter 4</h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <img src="images/임시이미지.png" alt="준비중" />
+            <h3>준비중</h3>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- 푸터 -->
   <footer>
     <p style="text-align:center; padding:20px 0;">&copy; 2025 게임 아트 포트폴리오</p>
   </footer>
