@@ -1,24 +1,70 @@
 body {
+  margin: 0;
   font-family: 'Nanum Gothic', sans-serif;
-  padding-top: 70px;
   background-color: #fff;
 }
 
-.navbar-inverse {
+.header {
   background-color: #000;
-  border: none;
+  padding: 18px 0;
+  text-align: center;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 15px 0 0 0;
+}
+
+.menu li a {
+  text-decoration: none;
   color: #9a9a9a;
+  font-size: 14px;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li.active > a {
+.menu li a:hover {
   color: #fff;
 }
 
-.carousel-inner > .item > img {
-  width: 100%;
-  height: auto;
+.carousel {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
 }
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+
+.slide {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0 15px;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
