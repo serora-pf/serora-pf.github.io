@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin: 15px 0 0 0;
+  margin-top: 15px;
 }
 
 .menu li a {
@@ -40,7 +40,7 @@ body {
   color: #fff;
 }
 
-/* 메인 슬라이드 (index.html) */
+/* 메인 슬라이드 (index.html 전용) */
 .carousel {
   position: relative;
   height: 700px;
@@ -75,7 +75,7 @@ body {
 .prev { left: 0; }
 .next { right: 0; }
 
-/* 프로젝트 페이지 */
+/* 프로젝트 페이지 스타일 */
 .projects {
   max-width: 1000px;
   margin: 40px auto;
@@ -94,10 +94,11 @@ body {
 }
 
 .project img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
 }
 
 .project h2 {
@@ -109,6 +110,7 @@ body {
 .project p {
   font-size: 16px;
   color: #555;
+  line-height: 1.4;
 }
 
 /* About 페이지 섹션 스타일 */
@@ -133,16 +135,16 @@ body {
   text-align: center;
 }
 
-.profile p {
-  font-size: 18px;
-  color: #444;
-  margin: 10px 0;
-}
-
 .profile h2 {
   font-size: 28px;
   margin: 10px 0;
   color: #111;
+}
+
+.profile p {
+  font-size: 18px;
+  color: #444;
+  margin: 10px 0;
 }
 
 .profile ul {
@@ -154,6 +156,7 @@ body {
   margin: 20px auto;
 }
 
+/* Tools 섹션 스타일 */
 .tools {
   max-width: 700px;
   margin: 60px auto;
@@ -167,8 +170,9 @@ body {
 }
 
 .tools img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  object-fit: cover;
 }
