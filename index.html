@@ -1,85 +1,78 @@
-/* 리셋 및 기본 스타일 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEROA 포트폴리오</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-}
+  <!-- 네비게이션 바 -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Game Art Portfolio</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">홈</a></li>
+        <li><a href="#portfolio">포트폴리오</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">소개 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">프로필</a></li>
+            <li><a href="#">수상경력</a></li>
+            <li><a href="#">활동이력</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">문의</a></li>
+      </ul>
+    </div>
+  </nav>
 
-/* 헤더 및 네비게이션 */
-header {
-  background: #333;
-  color: #fff;
-  padding: 1em 0;
-}
+  <!-- 캐러셀 -->
+  <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/image1.jpg" alt="Slide 1" class="img-responsive">
+      </div>
+      <div class="item">
+        <img src="images/image2.jpg" alt="Slide 2" class="img-responsive">
+      </div>
+      <div class="item">
+        <img src="images/image3.jpg" alt="Slide 3" class="img-responsive">
+      </div>
+    </div>
+    <a class="left carousel-control" href="#mainCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#mainCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
 
-header nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
+  <!-- 소개 섹션 -->
+  <section id="portfolio" class="container text-center" style="padding: 60px 0;">
+    <h2>포트폴리오</h2>
+    <p>다양한 게임 아트와 디자인 프로젝트를 만나보세요.</p>
+  </section>
 
-header nav ul li {
-  margin: 0 15px;
-}
+  <!-- 문의 섹션 -->
+  <section id="contact" class="container text-center" style="padding: 60px 0;">
+    <h2>문의</h2>
+    <p>Email: your.email@example.com</p>
+  </section>
 
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1em;
-}
+  <!-- 푸터 -->
+  <footer class="text-center" style="padding: 20px 0; background-color: #f5f5f5;">
+    <p>&copy; 2025 SEROA</p>
+  </footer>
 
-/* 히어로 섹션 */
-#hero {
-  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-}
-
-/* 섹션 기본 스타일 */
-section {
-  padding: 3em 1em;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-/* 프로젝트 섹션 */
-.project {
-  margin: 2em auto;
-  max-width: 600px;
-}
-
-.project img {
-  max-width: 100%;
-  height: auto;
-}
-
-.project h3 {
-  margin-top: 1em;
-  font-size: 1.5em;
-}
-
-/* 푸터 */
-footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
-}
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
