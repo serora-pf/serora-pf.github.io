@@ -2,10 +2,10 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Game Art Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -14,7 +14,7 @@
     <div class="logo">Game Art Portfolio</div>
     <nav>
       <ul class="menu">
-        <li><a href="about.html">About me</a></li>
+        <li><a href="about.html">About Me</a></li>
         <li><a href="project.html">Project</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -22,15 +22,15 @@
   </header>
 
   <!-- 메인 슬라이드 -->
-  <div class="carousel">
+  <section class="carousel" aria-label="메인 이미지 슬라이드">
     <div class="slides">
       <div class="slide active" style="background-image: url('images/slide1.jpg');"></div>
       <div class="slide" style="background-image: url('images/slide2.jpg');"></div>
       <div class="slide" style="background-image: url('images/slide3.jpg');"></div>
     </div>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
-  </div>
+    <button class="prev" aria-label="이전 슬라이드">&#10094;</button>
+    <button class="next" aria-label="다음 슬라이드">&#10095;</button>
+  </section>
 
   <script src="script.js"></script>
 </body>
